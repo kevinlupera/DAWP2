@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/06/2017, 20:27:34
+    Author     : Pierre
+*/
+
+*{
+   margin: 0;
+ }
+ #contenedorCesta{
+    padding: 15px;
+    height: auto;
+ }
+            
+            
+#infoProducto,.productoCesta{
+    display: block;
+    width: 98%;
+    margin: auto;
+    padding: 1%;
+}
+            
+            #infoProducto h3{
+                display: inline-block;
+            }
+            
+            #descripcion{
+                width: 30%;
+            }
+            
+            #cantidad, #precio,#total{
+                width: 20%;
+            }
+            
+            .productoCesta{
+                border-bottom: 1px solid gray;
+                border-top:  1px solid gray;
+                margin-top: 5px;
+            }
+            
+            .productoImg,.productoCantidad,.productoPrecio,.productoTotal,.btQuitar{
+                display: inline-block;
+                vertical-align: top;
+                
+            }
+            .productoImg{
+                width: 30%;
+            }
+            .productoLink{
+                vertical-align: top;
+                text-decoration: underline;
+                color: black;
+                margin-left: 10px;
+            }
+            
+            .productoLink:hover{
+                color: orangered;
+            }
+            .productoCantidad, .productoPrecio,.productoTotal{
+                width: 20%;
+            }
+
+            .formCantidad{
+                margin: 0px;
+            }
+            .formCantidad input{
+                display: inline-block;
+                width: 50px;
+            }
+            
+            .btQuitar{
+                width: 8%;
+                text-align: right;
+            }
+            .btQuitar a{
+                text-decoration: none;
+                color: gray;
+            }
+            .btQuitar a:hover{
+                color: orangered;
+            }
+            
+            #totalProductos{
+                height: 40px;
+                padding: 10px;
+            }
+            #etiquetatotal,#cantidadProductosTotal,#montoTotal{
+                display: inline-block;
+                font-weight: bold;
+            }
+            
+            #etiquetatotal{
+                width: 50%;
+            }
+            #cantidadProductosTotal, #montoTotal{
+                width: 24%;
+                text-align: right;
+            }
