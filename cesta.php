@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="es">
     <head>
         <?php include("codigos/meta.php")?>
@@ -16,37 +11,29 @@ and open the template in the editor.
                 padding: 15px;
                 height: auto;
             }
-            
-            
             #infoProducto,.productoCesta{
                 display: block;
                 width: 98%;
                 margin: auto;
                 padding: 1%;
-            }
-            
+            }           
             #infoProducto h3{
                 display: inline-block;
-            }
-            
+            }            
             #descripcion{
                 width: 40%;
-            }
-            
+            }            
             #cantidad, #precio{
                 width: 25%;
-            }
-            
+            }           
             .productoCesta{
                 border-bottom: 1px solid gray;
                 border-top:  1px solid gray;
                 margin-top: 5px;
-            }
-            
+            }           
             .productoImg,.productoCantidad,.productoPrecio,.btQuitar{
                 display: inline-block;
-                vertical-align: top;
-                
+                vertical-align: top;              
             }
             .productoImg{
                 width: 40%;
@@ -56,23 +43,20 @@ and open the template in the editor.
                 text-decoration: underline;
                 color: black;
                 margin-left: 10px;
-            }
-            
+            }           
             .productoLink:hover{
                 color: orangered;
             }
             .productoCantidad, .productoPrecio{
                 width: 25%;
             }
-
             .formCantidad{
                 margin: 0px;
             }
             .formCantidad input{
                 display: inline-block;
                 width: 50px;
-            }
-            
+            }          
             .btQuitar{
                 width: 8%;
                 text-align: right;
@@ -84,7 +68,6 @@ and open the template in the editor.
             .btQuitar a:hover{
                 color: orangered;
             }
-            
             #totalProductos{
                 height: 40px;
                 padding: 10px;
@@ -93,7 +76,6 @@ and open the template in the editor.
                 display: inline-block;
                 font-weight: bold;
             }
-            
             #etiquetatotal{
                 width: 45%;
             }
@@ -105,7 +87,6 @@ and open the template in the editor.
     <body>
         <?php include("codigos/header.php")?>
         <?php include("codigos/nav.php")?>
-        
         <div class="contenedor">
             <section id="contenedorCesta">
                 <div id="infoProducto">
@@ -123,7 +104,6 @@ and open the template in the editor.
                             <input type="number" name="quantity" min="0" max="10" value="0">
                             <span class="unidad">Pieza<span/>
                         </form>
-                        
                     </div>
                     <div class="productoPrecio">
                         <span class="valor">US $xx.xx<span/>
@@ -143,8 +123,7 @@ and open the template in the editor.
                         <form action="" class="formCantidad">
                             <input type="number" name="quantity" min="0" max="10" value="0">
                             <span class="unidad" id="">Pieza<span/>
-                        </form>
-                        
+                        </form>  
                     </div>
                     <div class="productoPrecio">
                         <span class="valor">US $xx.xx<span/>

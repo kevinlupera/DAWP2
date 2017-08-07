@@ -14,7 +14,7 @@ and open the template in the editor.
         <?php include("codigos/nav.php")?>
 
         <div class="contenedor">                    
-            <form method="post" action="loginController.php?op=1&ca=r">
+            <form method="post" action="controller/loginController.php?op=1&ca=r">
                 <label for="usuario">
                     Usuario:
                 </label>

@@ -1,17 +1,12 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <?php include("codigos/meta.php")?>
+        <?php include("../codigos/meta.php")?>
         <title>ALLBUY-FACTURACION</title>
     </head>
     <body>
-        <?php include("codigos/header.php")?>
-        <?php include("codigos/nav.php")?>
+        <?php include("../codigos/header.php")?>
+        <?php include("../codigos/nav.php")?>
         <div class="contenedor-fact">
             <section id='contenedor'>
             <section class="uno">
@@ -38,13 +33,12 @@ and open the template in the editor.
                     <input type="text" name="direccion" id="campo_dirCliente" onkeypress="validaLetrasNumeros()"><br/>
                     <label for="claveUsuario"><h5>Telefono:</h5></label>
                     <input type="text" name="telefono" id="campo_telCliente" onkeypress="validaSoloNumeros()" maxlength="10"><br/>
-
                     <input type="submit" value="Registrar" name="botonRegistrar">
                     <input type="reset" value="Limpiar">
                 </form>
             </aside>
         </div>
-        <?php include("codigos/javas.php")?>
-        <?php include("codigos/footer.php")?>
+        <?php include("../codigos/javas.php")?>
+        <?php include("../codigos/footer.php")?>
     </body>
 </html>

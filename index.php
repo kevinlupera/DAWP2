@@ -1,15 +1,8 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="es">
     <head>
         <title>ALLBUY</title>
-
         <?php include("codigos/meta.php")?>
-
     </head>
     <body class="inicio">
         <?php include("codigos/header.php")?>
@@ -54,7 +47,7 @@ and open the template in the editor.
                 <input type="reset" value="Limpiar" class="botonForm">
             </form>
         </aside>
-        <?php include("codigos/javas.php")?>
-        <?php include("codigos/footer.php")?>
+        <?php include("../codigos/javas.php")?>
+        <?php include("../codigos/footer.php")?>
     </body>
 </html>
