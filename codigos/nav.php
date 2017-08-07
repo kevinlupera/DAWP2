@@ -16,11 +16,25 @@ and open the template in the editor.
                 </div>
               </div>
                 <a id="inicio" href="index.php" class="item"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Inicio</a>
-                <a id="login" href="login.php" class="item"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Login</a>
+                <a id="login" href="loginController.php?op=2" class="item"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Login</a>
                 <a id="cesta" href="cesta.php" class="item"><i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;Cesta</a>
                 <a id="ventas" href="ventas.php" class="item"><i class="fa fa-cubes" aria-hidden="true"></i>&nbsp;Productos</a>
                 <a id="facturacion" href="facturacion.php" class="item"><i class="fa fa-print" aria-hidden="true"></i>&nbsp;Facturacion</a>
                 <a id="reportes" href="reportes.php" class="item"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Reportes</a>
                 <a id="usuarios" href="usuarios.php" class="item"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Usuarios</a>
+                <?php
+                    include("modelo/Usuario.php");
+                    session_start();
+                    $usuario=$_SESSION['usuario'];
+                    if($usuario==null || !isset($usuario) || empty($usuario)){
+                    header("Location:login.php");
+                    }
+                    else{
+                        echo " <script>
+                            document.getElementById('login').innerHTML = 'SALIR';
+                        </script>";
+                    }?>
+                <strong style=" float: right; color: white; margin-right: 10px;">
+                    <?php echo "Bienvenido: ".$usuario->getPer_nombres();?></strong>
             </div>
         </nav>

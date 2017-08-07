@@ -11,19 +11,17 @@ and open the template in the editor.
     </head>
     <body>
         <?php include("codigos/header.php")?>
-        <?php include("codigos/nav.php")?>
-
         <div class="contenedor">                    
-            <form method="post" action="controller/loginController.php?op=1&ca=r">
+            <form method="post" action="loginController.php?op=1&ca=r">
                 <label for="usuario">
                     Usuario:
                 </label>
-                <input type="text" name="usuario"/>
+                <input type="text" name="usuario" placeholder="Usuario" required/>
                 </br>
                 <label for="clave">
                     Clave:
                 </label>
-                <input type="password" name="clave"/>
+                <input type="password" name="clave" placeholder="Clave" required/>
                 </br>
                 <input type="submit" value="Enviar"/>
             </form>   

@@ -281,3 +281,24 @@ input{
     background: white;
 
 }
+
+#contenedor_anadir_cesta{
+    width: 100%;
+    margin-top: 5px;
+    border-top: 1px solid black;
+}
+#form_anadir_cesta{
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#form_anadir_cesta label,#form_anadir_cesta input{
+    margin: 2px;
+ 
+}
+
+#form_anadir_cesta #bt_submit{
+    width: 100%;
+}
