@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="es">
     <head>
         <?php include("codigos/meta.php")?>
@@ -12,7 +7,7 @@ and open the template in the editor.
     <body>
         <?php include("codigos/header.php")?>
         <div class="contenedor">                    
-            <form method="post" action="loginController.php?op=1&ca=r">
+            <form method="post" action="Controladores/loginController.php?op=1&ca=r">
                 <label for="usuario">
                     Usuario:
                 </label>
