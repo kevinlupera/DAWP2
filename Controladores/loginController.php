@@ -6,7 +6,7 @@ $ca=filter_input(INPUT_GET,"ca");
 //Ver el estado de la variable
 if(!isset($option) || empty($option))
 {
-    header("Location:../login.php");
+    header("Location:../view/login.php");
     exit;
 }
 if($option==1){
@@ -25,11 +25,11 @@ if($option==1){
             header("Location:../index.php");
             exit;
         }else{
-            header("Location:../login.php");
+            header("Location:../view/login.php");
             exit;
         }
     }else {
-        header("Location:../login.php");
+        header("Location:../view/login.php");
         exit;
     }
 }else if($option ==2){
@@ -39,7 +39,7 @@ if($option==1){
     session_unset();
     //eliminar/destruir sesion
     session_destroy();
-    header("Location:../login.php");
+    header("Location:../view/login.php");
 }
 function validarUsuario($user, $pass) {
     //Permite incluir un archivo dentro de otro

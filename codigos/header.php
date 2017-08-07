@@ -9,7 +9,7 @@ and open the template in the editor.
         <div class="logo">
             </br>
             <h1 class="logo"><b>ALLBUY</b></h1>
-            <img id="logo" src="imagenes/logo.png" alt="Logo"/> 
+            <img id="logo" src="../imagenes/logo.png" alt="Logo"/> 
         </div>
     </div>
 </header>
